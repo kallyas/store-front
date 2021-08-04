@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const BACKEND_URL = 'https://forna.herokuapp.com/api/v1/';
-const ALL_CLOTHS_URL = 'https://forna.herokuapp.com/api/v1/inventories';
-const CART_URL = 'https://forna.herokuapp.com/api/v1/carts';
-const ITEM_URL = 'https://forna.herokuapp.com/api/v1/items'
+const BACKEND_URL = process.env.REACT_APP_API_URL;
+const ALL_CLOTHS_URL = `${BACKEND_URL}/inventories`;
+const CART_URL = `${BACKEND_URL}/carts`
+const ITEM_URL = `${BACKEND_URL}/items`
 
 const token =  localStorage.getItem('token');
 const config = { headers: { Authorization: `Bearer ${token}`, }, }; 

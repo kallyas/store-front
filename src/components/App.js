@@ -5,7 +5,7 @@ import { api } from '../services/api';
 import Cookies, { set } from 'js-cookie'
 import './App.css';
 
-import About from './About';
+import About from './about/About';
 import Login from './Login';
 import MainNav from './MainNav';
 import Signup from './Signup';
@@ -13,7 +13,7 @@ import HomePage from './HomePage';
 import Loader from './Loader';
 import ClothingContainer from './ClothingContainer'
 import ClothCard from './ClothCard'
-import Cart from './Cart'
+import Cart from './cart/Cart'
 import OrderHistory from './OrderHistory';
 import Footer from './Footer'
 import AlertMessage from './AlertMessage';

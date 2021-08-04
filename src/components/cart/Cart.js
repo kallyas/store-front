@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Checkout from './Checkout'
-import * as cookie from '../services/cookies'
+import Checkout from '../Checkout'
+import * as cookie from '../../services/cookies'
 import './Cart.css';
 
 // import { Link } from 'react-router-dom';
 import { Image, Button } from 'semantic-ui-react'
 import { Table } from 'react-bootstrap'
-import COModal from './COModal'
-import PurchaseModal from './PurchaseModal'
+import COModal from '../COModal'
+import PurchaseModal from '../PurchaseModal'
 
 export default function Cart({allCloths, user}) {
 
